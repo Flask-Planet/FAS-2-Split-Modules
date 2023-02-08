@@ -4,8 +4,6 @@
 
 Contains a working example of a Flask App setup using split modules.
 
-![](https://github.com/creativecommons/cc-assets/blob/main/license_badges/small/cc_zero.svg)
-
 ### Attribution
 
 [CheeseCake87 (David Carmichael)](https://github.com/CheeseCake87)
