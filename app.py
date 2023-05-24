@@ -15,6 +15,16 @@ app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 db = SQLAlchemy(app)
 
+
+# Model for database
+class Example(db.Model):
+    example_id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(128), nullable=False)
+
+    def __repr__(self):
+        return f"<Example {self.name}>"
+
+
 with app.app_context():
     db.create_all()
 
